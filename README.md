@@ -10,9 +10,11 @@ TweetBot4Picture monitors twitter accounts and automatically downloads pictures.
 
 ## How to use
 You edit lists.txt and append accounts which you want to monitor, such as following:
+
     TwitterJP
     kantei
     muraoka_
+
 lists.txt includes only twitter account (doesn't include @).
 Write only one twitter account per line.
 
