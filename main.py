@@ -92,6 +92,8 @@ opener = twitter_login(twitter_username, twitter_password)
 p = re.compile(r'data-image-url=".+"')
 while True:
     for account in alist:
+        if len(account) == 0:
+            continue
         print("Search pictures in " + account)
         with opener.open("https://twitter.com/" + account) as res:
             if res.code != 200:
