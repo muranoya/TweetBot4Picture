@@ -25,6 +25,7 @@ Write only one twitter account per line.
 1. Run Python3
   1. ex. Run cmd.exe and type python.exe main.py
   1. If you don't add Python to the PATH environment, you specify full path of python.
+  1. I recommend creating a bat file. You don't have to type the command anymore.
 
 ### On *nix
 1. Install Python3
