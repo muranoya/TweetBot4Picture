@@ -32,7 +32,7 @@ def read_accounts():
         sys.exit()
     with open(lists_file, "r") as f:
         for line in f.readlines():
-            account_list.append(line.replace("\n", "").replace("\r", ""))
+            account_list.append(line.replace("\n", "").replace("\r", "").strip())
     return account_list
 
 def download_file(opener, url, account):
