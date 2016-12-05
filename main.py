@@ -32,7 +32,7 @@ def read_accounts():
         sys.exit()
     with open(lists_file, "r") as f:
         for line in f.readlines():
-            account_list.append(line.replace("\n", "").replace("\r", ""))
+            account_list.append(line.strip().replace("\n", "").replace("\r", ""))
     return account_list
 
 def download_file(opener, url, account):
@@ -83,6 +83,9 @@ def twitter_login(username, password):
 
 print("Press Ctrl-c to terminate this program.")
 alist = read_accounts()
+if len(alist) == 0:
+    print("lists.txt is empty!")
+    sys.exit()
 
 print("Twitter Username:")
 twitter_username = input()
